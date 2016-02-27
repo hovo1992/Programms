@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Play);
+* {
+	padding: 0;
+	margin: 3px 20px;
+}
+root {
+	margin: 3px 110px;
+	/*background-color: #c1b2aa;*/
+}
+caption, main_level, nod-level, ancestor, parent, sbling, child, branch, leaf {
+	display: list-item;
+	list-style: square;
+	font-family: Play;
+
+}
+main {
+    width: 600px;
+
+    line-height: 19px;
+
+    background-color: rgba(181,132,135,0.9);
+
+    border-radius: 10px;
+
+	display: block;
+    
+	/*padding: 1px;*/
+	/*margin: 55px auto;*/
+}
+caption {
+	color: #474767;
+
+	display: block;
+
+	padding: 8px;
+	margin: 20px 5px;
+}
+main_level {
+	color: rgba(107, 8, 62, 0.8);
+
+	margin: 20px 60px;
+}
+nod-level {
+	color: #7f5a7c;
+}
+parent {
+	color: rgba(107, 8, 62, 0.8);
+}
+ancestor {
+	color: #dc8389;
+}
+sbling, branch {
+	color: #485C71;
+}
+child {
+	color: #715484;
+
+	margin: 5px 50px;
+}
+leaf {
+	color: #CF5F3B;
+	
+	margin: 5px 60px;
+}
+[class="color_blue"] {
+	color: #A5494F;
+}
+q:after {
+	content: ")";
+}
+q:before {
+	content: "(";
+}
+q {
+	margin: 0 3px;
+}

@@ -1,0 +1,216 @@
+
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	width: 100%;
+    height: 100%;
+}
+body {
+	overflow: hidden;
+	margin-left: 25px;
+}
+main {
+    width: 375px;
+    padding-bottom: 14px;
+    background: rgba(0,0,0,.2);
+    float: right;
+	margin-top: 20px;
+}
+.menu, .menu2 {
+	position: absolute;
+	visibility: hidden;
+}
+
+.second:hover div, .third:hover div {
+	visibility: visible;
+}
+
+ul {
+	position: relative;
+	display: inline-block;
+	width: 400px;
+    text-align: center;
+}
+body > ul {
+	margin: 250px 15px 0;
+}
+li {
+	/*position: relative;
+	display: block;
+	float: left;*/
+	width: 70px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	list-style: none;
+}
+
+.liMenu {
+	position: relative;
+	float: left;
+	display: block;
+	white-space: nowrap;
+	padding: 13px;
+}
+.liMenu:nth-of-type(1) {
+	margin-left: 10px;
+}
+.liMenu:nth-of-type(2) {
+	width: 117px;
+}
+.liMenu:nth-of-type(3) {
+	width: 90px;
+}
+
+.liMenu > a {
+	background: #808080;
+
+	border-radius: 4px;
+}
+
+.liMenu > a::before {
+	content: "";
+	box-shadow: 0 4px 6px #151414;
+	transform: rotate(5deg);
+	position: absolute;
+	height: 3px;
+	width: 51px;
+	right: 15px;
+	top: 37px;
+	z-index: -1;
+}
+
+.liMenu:hover a {
+    color: #E2D9D9;
+    border-color: #ABA4A4;
+}
+
+a {
+	height: 40px;
+	color: #272727;
+	text-decoration: none;
+	border: 2px solid transparent;
+	padding: 10px 14px;
+}
+
+.column a, .menu2 a {
+	color: #fff;
+	border: none;
+}
+
+.column a:hover, .menu2 a:hover {
+	border-bottom: 2px solid #438fd7;
+}
+
+.menu {
+	height: 114px;
+	width: 256px;
+	position: absolute;
+	top: 44px;
+	background-color: #272727;
+	border-radius: 5px;
+}
+
+.menu2 {
+	height: 114px;
+	width: 113px;
+	position: absolute;
+	top: 44px;
+	background-color: #272727;
+	border-radius: 5px;
+}
+
+	.column li, .menu2 li {
+		float: none;
+		padding: 10px 0 6px 4px;
+	}
+
+.column:first-of-type {
+	position: absolute;
+}
+
+.column:nth-child(2) {
+	position: absolute;
+	left: 150px;
+}
+
+.menu div:first-of-type li:first-of-type a {
+	cursor: url(../images/cursor.png), auto;
+}
+.menu div:first-of-type li:nth-of-type(2) a {
+	cursor: url(../images/cursor2.png), auto;
+}
+.menu div:first-of-type li:nth-of-type(3) a {
+	cursor: url(../images/cursor3.png), auto;
+}
+.menu div:last-of-type li:nth-of-type(1) a {
+	cursor: url(../images/cursor4.png), auto;
+}
+.menu div:last-of-type li:nth-of-type(2) a {
+	cursor: url(../images/cursor5.png), auto;
+}
+.liMenu:first-of-type a {
+	cursor: url("../images/home.png"), auto;
+}
+body > div:first-child {
+	position: relative;
+	top: 40px;
+    left: 105px;
+}
+img {
+	position: absolute;
+	top: 10px;
+	left: 62px;
+	height: 170px;
+	width: 250px;
+	opacity: 0;
+	transition: opacity;
+}
+
+@keyframes animals{
+  0%{
+    opacity: 1;
+  }
+  10.5% {
+    opacity: 1;
+  }
+  12.5%{
+    opacity: 0;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+	img:nth-child(1) {
+		-webkit-animation: animals 48s linear 42s infinite;
+	}
+	img:nth-child(2) {
+		-webkit-animation: animals 48s linear 36s infinite;
+	}
+	img:nth-child(3) {
+		-webkit-animation: animals 48s linear 30s infinite;
+	}
+	img:nth-child(4) {
+		-webkit-animation: animals 48s linear 24s infinite;
+	}
+	img:nth-child(5) {
+		-webkit-animation: animals 48s linear 18s infinite;
+	}
+	img:nth-child(6) {
+		-webkit-animation: animals 48s linear 12s infinite;
+	}
+	img:nth-child(7) {
+  		-webkit-animation: animals 48s linear 6s infinite;
+	}
+	img:nth-child(8) {
+ 		-webkit-animation: animals 48s linear 0s infinite;
+	}
+
+	div {
+	position: relative;
+	height: 200px;
+	}

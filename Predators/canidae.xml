@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<html  xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<script src="content/scripts/jquery.js" />
+		<script src="content/scripts/Canidae.js" />
+					<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Fredericka+the+Great::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); 
+</script>
+<!-- <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css' /> -->
+		<style type="text/css">
+			@import url(content/style/canidae.css);
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>Table 1.1</caption>
+			<thead>
+				<tr>
+					<th>Description List</th>
+					<th>Contents</th>
+					<th>Count</th>
+					<th>1</th> <!-- onClick="checkAll('radio1')" -->
+					<th>2</th><!--  onClick="checkAll('radio2')" -->
+					<th>3</th><!-- onClick="checkAll('radio3')" -->
+					<th id="extinct">Extinct</th>
+				</tr>
+			</thead>
+			<tbody id="tbody">
+				<tr id="tr0">
+					<td>
+						<dl>
+							<dt>Dog</dt>
+							<dd>A carnivorous mammal of the family Canidae.</dd>
+						</dl>
+					</td>
+					<td>
+						<input type="range" class="range" value="0" min="0" max="100" step=".05" title="0" onmousemove="this.title=this.value;"/>
+					</td>
+					<td>
+						<input type="button" name="Prev" value="&lt; &lt;"/>
+						<input type="text" class="textbox" name="Screen" readonly="readonly" value="0"/>
+						<input type="button" name="Next" value="&gt; &gt;"/>
+					</td>
+					<td>
+						<input type="radio" name="answer" class="radio" value="1"/>
+					</td>
+					<td>
+						<input type="radio" name="answer" class="radio" value="2"/>
+					</td>
+					<td>
+						<input type="radio" name="answer" class="radio" value="3"/>
+					</td>
+					<td>
+						<input type="checkbox" class="extinct_box payt3" id="payt0"/>
+						<label for="payt0"></label>
+					</td>
+				</tr>
+				<tr id="tr1">
+					<td>
+						<dl>
+							<dt>Jackal</dt>
+							<dd>A carnivorous mammal of the family Canidae.</dd>
+						</dl>
+					</td>
+					<td>
+						<input type="range" class="range" value="0.1" min="0.1" max="1" step=".005" title="0.1" onmousemove="this.title=this.value;"/>
+					</td>
+					<td>
+						
+							<input type="button" name="Prev" value="&lt; &lt;"/>
+							<input type="text" class="textbox" name="Screen" readonly="readonly" value="0"/>
+							<input type="button" name="Next" value="&gt; &gt;"/>
+						
+					</td>
+					<td>
+						<input type="radio" name="answer1" class="radio" value="1"/>
+					</td>
+					<td>
+						<input type="radio" name="answer1" class="radio" value="2"/>
+					</td>
+					<td>
+						<input type="radio" name="answer1" class="radio" value="3"/>
+					</td>
+					<td>
+						<input type="checkbox" class="extinct_box payt3" id="payt1"/>
+						<label for="payt1"></label>
+					</td>
+				</tr>
+				<tr id="tr2">
+					<td>
+						<dl>
+							<dt>Wolf</dt>
+							<dd>A carnivorous mammal of the family Canidae.</dd>
+						</dl>
+					</td>
+					<td>
+						<input type="range" class="range" value="-10" min="-10" max="100" step=".005" title="-10" onmousemove="this.title=this.value;"/>
+					</td>
+					<td>
+					
+							<input type="button" name="Prev" value="&lt; &lt;"/>
+							<input type="text" class="textbox" name="Screen" readonly="readonly" value="0"/>
+							<input type="button" name="Next" value="&gt; &gt;"/>
+						
+					</td>
+					<td>
+						<input type="radio" name="answer2" class="radio" value="1"/>
+					</td>
+					<td>
+						<input type="radio" name="answer2" class="radio" value="2"/>
+					</td>
+					<td>
+						<input type="radio" name="answer2" class="radio" value="3"/>
+					</td>
+					<td>
+						<input type="checkbox" class="extinct_box payt3" id="payt2"/>
+						<label for="payt2"></label>
+					</td>
+				</tr>
+				<tr id="tr3">
+					<td>
+						<dl>
+							<dt>Vixen</dt>
+							<dd>A carnivorous mammal of the family Canidae.</dd>
+						</dl>
+					</td>
+					<td>
+						<input type="range" class="range" value="0" min="0" max="900" step=".00
+							5" title="10" onmousemove="this.title=this.value;"/>
+					</td>
+					<td>
+						
+							<input type="button" name="Prev" value="&lt; &lt;"/>
+							<input type="text" class="textbox" name="Screen" readonly="readonly" value="0"/>
+							<input type="button" name="Next" value="&gt; &gt;"/>
+						
+					</td>
+					<td>
+						<input type="radio" name="answer3" class="radio" value="1"/>
+					</td>
+					<td>
+						<input type="radio" name="answer3" class="radio" value="2"/>
+					</td>
+					<td>
+						<input type="radio" name="answer3" class="radio" value="3"/>
+					</td>
+					<td>
+						<input type="checkbox" class="extinct_box payt3" id="payt3"/>
+						<label for="payt3"></label>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot id="tfoot">
+				<tr>
+					<td>SUM</td>
+					<td>
+						<meter id="meter" min="0" low="40" optimum="30" high="160" max="200" value="0" step="1"></meter>
+					</td>
+					<td colspan="4">
+						<progress id="progress" value="48" min="0" max="96"></progress>
+					</td>
+					<td>
+						<span class="price">0</span>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>

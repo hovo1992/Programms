@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+@namespace html5 "http://www.w3.org/1999/xhtml";
+@namespace h "http://www.w3.org/1999/xhtml";
+
+* {
+	font-family: Titillium Web, sans-serif;
+
+	color: #FC6472;
+	
+	padding: 0;
+	margin: 0;
+}
+body {
+	/*overflow: hidden;*/
+	margin: 20px 110px;
+}
+
+div {
+
+	height: 592px;
+	width: 600px;
+
+	background-color: #ECCDB3;
+
+	border-radius: 5px;
+	padding: 5px;
+	background: rgba(0,0,0,.2);
+}
+
+bdo {
+	width: 600px;
+
+	color: #FF8888;
+	font-size: 41px;
+
+	text-align: center;
+	display: block;
+	background: rgba(0,0,0,.3);
+}
+details {
+	background: rgba(0,0,0,.4);
+}
+summary:before {
+	content: attr(title);
+	padding: 5px;
+}
+summary {
+	background: rgba(0,0,0,.2);
+	outline: none;
+}
+q {
+	quotes: ' (' attr(title) ') ';
+}
+a {
+	color: #20B9A5;;
+	text-decoration: none;
+}
+ol {
+	/*overflow: auto;*/
+
+	/*margin-left: 10px;*/
+}
+html5|li {
+	margin-left: 23px;
+	/*font-family: Titillium Web, sans-serif;*/
+}
+h|li {
+	color: #FC6472;
+
+	display: list-item;
+
+	/*display: block;*/
+}
+.scroll {
+	height: 520px;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.3);
+	margin-top: 10px;
+}
+
+}
+
+::-webkit-scrollbar-track {
+	background-color: rgba(0,0,0,0);
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 7px;
+	background-color: transparent; 
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0,0,0,.15);
+	background-clip: padding-box;
+	height: 40px;
+	width: 40px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0,0,0,.3);
+}
+::-webkit-scrollbar-button {
+	height: 5px;
+	width: 5px;
+	background: transparent;
+}

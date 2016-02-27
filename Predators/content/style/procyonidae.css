@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+/** {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 700px;
+	
+	margin: auto;
+	background-color: #c1b2aa;
+}
+q {
+	quotes: "(" ")";
+}*/
+
+li {
+	color: #3EA5A5;
+	list-style: square;
+
+	display: list-item;
+}
+span {
+	color: #000;
+}
+.blossom {
+	color: #A52A2A;
+}
+#blossom {
+	color: #A52A2A;
+}
+#color li {
+	color: #3EA5A5;
+	list-style: square;
+}
+[title = "Tribe Bassariscini"] {
+	margin-left: 40px;
+}
+body {
+	/*width: 585px;*/
+
+	margin: 6px 0 0 107px;
+}
+details, summary, dir, li {
+	margin: 0 20px;
+}
+details {
+	color: #151991;
+	font-family: Pathway Gothic One;
+
+	background-color: #D8D6D6;
+
+	border-radius: 10px;
+
+	margin-bottom: 20px;
+}
+body details:first-child {
+    padding: 20px;
+    /* margin: auto; */
+    margin-top: 13px;
+    /* float: left; */
+    /* line-height: 10px; */
+    font-size: 6px;
+    width: 600px;
+    /* height: 560px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    position: relative;
+}
+.caption::before, .subfamily::before {
+	display: none;
+}
+.caption::after, .subfamily::after {
+	content: attr(title);
+}
+
+summary::before {
+	content: attr(title);
+	list-style: circle;
+	float: left;
+
+	display: list-item;
+}
+
+.distance, .length {
+	margin-left: 40px;
+}
+
+.position li {
+	color: #A52A2A;
+	list-style: circle;
+}
+summary {
+	outline: none;
+}
+/*.position {
+	margin-left: -13px;
+}
+.tribe {
+	color: red;
+}
+.caption::before, .subfamily::before {
+	display:none;
+}
+
+.subfamily::after {
+	content: attr(title);
+}
+.disc {
+	list-style: disc;
+	color: #151991;
+}
+.potosinae{
+	margin-left: 117px;
+}
+.potosinae::after {
+	content: "( five spaceies in two genera )";
+}
+.potosinae::before {
+	display: list-item;
+    list-style: disc;
+}*/
+/*.subfamily {
+	
+}*/
+/*summary::after {
+	display: list-item;
+	list-style: circle;
+	float: left;
+}*/
+
+/*dir {
+	margin: 0 70px;
+	display: list-item;
+	color: #f26a6a;
+}
+p {
+	margin: 0 0 20px 50px;
+	display: list-item;
+	list-style-type: circle;
+	color: #f26a6a;
+}
+span {
+	color: black;
+	font-family: Palatino Linotype;
+}
+
+.caption {
+	margin: 10px 0 30px 20px;
+	text-decoration: none;
+}*/
+.div1 {
+	position: absolute;
+    bottom: 0;
+    display: inline-block;
+}
+.div2 {
+	position: absolute;
+    bottom: 0;
+    right: 20px;
+}
