@@ -1,83 +1,112 @@
 <?xml version="1.0" ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<style type="text/css">
-		@import url(content/style/procyonidae.css);
-	</style>
-</head>
-<body>
-	<details open="open">
-		<summary class="caption" title="FAMILY PROCYONIDAE"></summary>
+	<head>
+		<style type="text/css">
+			@import url(content/style/procyonidae.css);
+		</style>
+	</head>
+	<body>
+		<details open="open">
+			<summary class="caption" title="FAMILY PROCYONIDAE"></summary>
 			<details open="open">
 				<summary class="subfamily" title="Subfamily Procyoninae( nine spacies in four genera )"></summary>
-				<span class="blossom"><summary class="distance">Tribe Procyonini</summary></span>
-							<details open="open">
-								<summary title="Subtribe Procyonina"></summary>
-									<dir>
-										<li><span>Raccoons, Procyon</span>
-											<dir>
-												<li><span>Crab-eating raccoon,</span> Procyon cancrivorus</li>
-												<li><span>Cozumel raccoon,</span> Procyon pygmaeus</li>
-												<li><span>Common raccoon,</span> Procyon lotor</li>
-											</dir>
-										</li>
-									</dir>
-							</details>
-							<details open="open">
-					<summary title="Subtribe Nasuina"></summary>
-						<dir>
-							<li>Nasua
-								<li><span>South American</span> coati or ning-tailed coati, Nasua nasua</li>
-								<li><span>White-nosed coati,</span> Naualla meridensis</li>
-							</li>
-							<li><span>Nasuella</span>
-								<li><span>Westem mountain coati,</span> Nasuella olivecea</li>
-								<li><span>Eastem mountain coati,</span> Nasuella meridensis</li>
-							</li>
-						</dir>
-				</details>
-			</details>
+				<span class="blossom">Tribe Procyonini</span>
 				<details open="open">
-					<summary title="Tribe Bassariscini"></summary>
+					<summary title="Subtribe Procyonina"></summary>
 					<dir>
-						<span id="blossom"><li class="length"><span>Bassariscus</span>
+						<li>
+							<span>Raccoons, Procyon</span>
 							<dir>
 								<li>
-									<span>Ringtail,</span> Bussaricus
+									<span>Crab-eating raccoon,</span> Procyon cancrivorus
 								</li>
 								<li>
-								<span>Cacomistle,</span> Bussaricus sumichrasti
+									<span>Cozumel raccoon,</span> Procyon pygmaeus
+								</li>
+								<li>
+									<span>Common raccoon,</span> Procyon lotor
 								</li>
 							</dir>
-						</li></span>
+						</li>
 					</dir>
 				</details>
-
-		<details open="open">
-			<summary class="potosinae" title="Subfamily Potosinae"></summary>
+				<details open="open">
+					<summary title="Subtribe Nasuina"></summary>
+					<dir>
+						<li>Nasua
+							<dir>
+								<li>
+									<span>South American</span> coati or ning-tailed coati, Nasua nasua
+								</li>
+								<li>
+									<span>White-nosed coati,</span> Naualla meridensis
+								</li>
+							</dir>
+						</li>
+						<li>
+							<span>Nasuella</span>
+							<dir>
+								<li>
+									<span>Westem mountain coati,</span> Nasuella olivecea
+								</li>
+								<li>
+									<span>Eastem mountain coati,</span> Nasuella meridensis
+								</li>
+							</dir>
+						</li>
+					</dir>
+				</details>
+			</details>
+			<details class="Bassariscini" open="open">
+				<summary  title="Tribe Bassariscini"></summary>
+				<dir>
+					<li class="length">
+						<span>Bassariscus</span>
+						<dir>
+							<li>
+								<span>Ringtail,</span> Bussaricus
+							</li>
+							<li>
+								<span>Cacomistle,</span> Bussaricus sumichrasti
+							</li>
+						</dir>
+					</li>
+				</dir>
+			</details>
+			<details open="open">
+				<summary class="potosinae" title="Subfamily Potosinae"></summary>
 				<dir class="position">
 					<li id="color">Potos
 						<dir>
-							<li><span>Kinkajou,</span> Potos flavus</li>
+							<li>
+								<span>Kinkajou,</span> Potos flavus
+							</li>
 						</dir>
 					</li>
 					<li id="color">Bassaricyon
 						<dir>
-							<li><span>Nortem olingo</span> or Gabbi's olingo, Bassaricyon gabbii</li>
-							<li><span>Eastem lowland olingo,</span> Bassaricyon alleni</li>
-							<li><span>Westem lowland olingo,</span> Bassaricyon medius</li>
-							<li><span>Olinguito,</span> Bassaricyon neblina</li>
+							<li>
+								<span>Nortem olingo</span> or Gabbi's olingo, Bassaricyon gabbii
+							</li>
+							<li>
+								<span>Eastem lowland olingo,</span> Bassaricyon alleni
+							</li>
+							<li>
+								<span>Westem lowland olingo,</span> Bassaricyon medius
+							</li>
+							<li>
+								<span>Olinguito,</span> Bassaricyon neblina
+							</li>
 						</dir>
 					</li>
-			</dir>
+				</dir>
+			</details>
+			<div class="div1">
+				<img src="content/images/h102.gif"/>
+			</div>
+			<div class="div2">
+				<img src="content/images/h118.gif"/>
+			</div>
 		</details>
-	<div class="div1">
-		<img src="content/images/h102.gif"/>
-	</div>
-	<div class="div2">
-		<img src="content/images/h118.gif"/>
-	</div>
-	</details>
-
-</body>
+	</body>
 </html>

@@ -74,21 +74,29 @@ function refuse(i) {
 		.val(function() {
 			return this.prop('min'); 
 		})
+		.css('cursor', 'not-allowed')
 		.closest('tr')
 		.find('[type=text]')
 		.val(0);
 
 	for (let j = 0; j < buttons.length; j++) { ///forEach
-		buttons[j].attr('disabled', 'disabled');
+		buttons[j]
+			.attr('disabled', 'disabled')
+			.css('cursor', 'not-allowed');
 	}
 
 	for (let j = 0; j < radios.length; j++) { ///forEach
 		radios[j].attr('disabled', 'disabled')
-			.removeProp('checked');
+			.removeProp('checked')
+			.css('cursor', 'not-allowed');
 	}
 };
 
 for (let i = 0; i < radioList.length; i++) {
+	if(!(i%3)) {
+		radioList[i].prop('checked', 'checked');
+	}
+
 	radioList[i].on('click', function() { 
 		computeProgress(Math.floor(i / 3), i); 
 	});
@@ -154,7 +162,7 @@ function changeValue() {
 	sumEl.text((meter.val() * progress.val()).toFixed());
 }
 
-document.on('input,click', changeValue);
+meter.on('change', function() {changeValue() }); ////////////////////////////////////////
 
 function allow(i) {
 	var parent = trList[i],
@@ -162,18 +170,28 @@ function allow(i) {
 		buttons = parent.find('[type=button]'),
 		radios = parent.find('[type=radio]');
 
-	ranges.removeAttr('readonly');
+	ranges
+		.removeAttr('readonly')
+		.css('cursor', 'auto');
 
 	for (let i = 0; i < buttons.length; i++) {
-		buttons[i].removeAttr('disabled');
+		buttons[i]
+			.removeAttr('disabled')
+			.css('cursor', 'auto');
 	}
 
 	for (let i = 0; i < radios.length; i++) {
-		radios[i].removeProp('disabled');
+		radios[i]
+			.removeProp('disabled')
+			.css('cursor', 'auto');
+		if(!i) {
+			radios[i].prop('checked', 'checked');
+		}
 	}
 }
 
 meter.on('mousedown', function(e) {
+	calculate(e);
 	meter.on('mousedown, mousemove', calculate);
 	document.on('mouseup', function() {
 		meter.off('mousemove', calculate);

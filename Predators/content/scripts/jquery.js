@@ -1,4 +1,3 @@
-
 (function(){
 'use strict';
 HTMLElement.prototype.setProps = function (attributes) {
@@ -16,71 +15,72 @@ HTMLElement.prototype.setProps = function (attributes) {
 		return this;
 }
 
-	window.create = function(selector, attributes, ns) {
-		var match = /\w+:?\w*/.exec(selector),
-			tag = document.createElementNS(ns || NAMESPACES.HTML, match[0]);
-		if (attributes != undefined) {
-			tag.setProps(attributes);
-		}
-		return tag;
+window.create = function(selector, attributes, ns) {
+	var match = /\w+:?\w*/.exec(selector),
+		tag = document.createElementNS(ns || NAMESPACES.HTML, match[0]);
+	if (attributes != undefined) {
+		tag.setProps(attributes);
 	}
-	window.$ = function(selector, attributes, ns) {
-		var pattern = /:(text|password|radio|checkbox|submit|reset|button|image|file)|(selected)/,
-			elements,
-			matchs,
-			index = 1;
+	return tag;
+}
+window.$ = function(selector, attributes, ns) {
+	var pattern = /:(text|password|radio|checkbox|submit|reset|button|image|file)|(selected)/,
+		elements,
+		matchs,
+		index = 1;
 
-		function sizzle(number) {
+	function sizzle(number) {
 
-			switch(number) {
-				case 1:
-					elements = document.querySelectorAll('[type=' + selector.slice(1) + ']'); 
-					break;
-				case 2:
-					elements = document.querySelectorAll('[selected=' + selector.slice(1) + ']');
-					break;
-			}
-			// elements = document.querySelectorAll('[type=' + selector.slice(1) + ']');
+		switch(number) {
+			case 1:
+				elements = document.querySelectorAll('[type=' + selector.slice(1) + ']'); 
+				break;
+			case 2:
+				elements = document.querySelectorAll('[selected=' + selector.slice(1) + ']');
+				break;
 		}
-
-		if ('function' == typeof selector) {
-			document.ready(selector);
-			return;
-		}
-		if ('string' == typeof selector) {
-			// if (/^<\w+:?\w*>$/.test(selector)) {
-			// 	return create(selector, attributes, ns);
-			// 
-			if(pattern.test(selector)) {
-				matchs = pattern.exec(selector);
-				matchs != null && sizzle(matchs.length - 1);
-				
-			} else {
-				elements = document.querySelectorAll(selector);
-			}
-
-			for (var i = 0; i < elements.length; i++) {
-				elements[i].setProps(attributes);
-			}
-
-			return (elements.length == 1 ? elements[0] : elements);
-		}
-
-		if (Object == selector.constructor) {
-			return create(selector.selector, attributes, selector.ns);
-		}
-		return selector;
-
-		// if(selector instanceof HTMLDocument){
-		// 	this.prototype.ready = function(func){
-		// 		document.on('DOMContentLoaded', func);
-		// 	}
-		// }
-
+		// elements = document.querySelectorAll('[type=' + selector.slice(1) + ']');
 	}
 
+	if ('function' == typeof selector) {
+		document.ready(selector);
+		return;
+	}
+	if ('string' == typeof selector) {
+		// if (/^<\w+:?\w*>$/.test(selector)) {
+		// 	return create(selector, attributes, ns);
+		// 
+		if(pattern.test(selector)) {
+			matchs = pattern.exec(selector);
+			matchs != null && sizzle(matchs.length - 1);
+			
+		} else {
+			elements = document.querySelectorAll(selector);
+		}
 
-Array.prototype.dim = function (val, size) {
+		for (var i = 0; i < elements.length; i++) {
+			elements[i].setProps(attributes);
+		}
+
+		return (elements.length == 1 ? elements[0] : elements);
+	}
+
+	if (Object == selector.constructor) {
+		return create(selector.selector, attributes, selector.ns);
+	}
+	return selector;
+
+	// if(selector instanceof HTMLDocument){
+	// 	this.prototype.ready = function(func){
+	// 		document.on('DOMContentLoaded', func);
+	// 	}
+	// }
+//////////////////////////////////////////////////////////////////////
+
+function Wrapper() {};
+var wrapper = new Wrapper();
+
+/*Array.prototype*/wrapper.dim = function (val, size) {
 	 var i;
 	 size = size || this.length;
 	 for (i = 0; i < size; i += 1) {
@@ -88,7 +88,13 @@ Array.prototype.dim = function (val, size) {
 	 }
 
 	 return this;
-};
+}
+
+
+}
+
+
+
 
 HTMLElement.prototype.find = function(selector){////////////////add attr
 	var elements = this.querySelectorAll(selector);
@@ -117,16 +123,20 @@ HTMLElement.prototype.val = function(value){
 // 	return this;
 // }
 
-EventTarget.prototype.on = function (events, handler, selector) {
-	this.addEventListener(events,
-		selector ?
-		(function () {
-			if (event.srcElement == this.find(selector)) {
-				handler();
-			}
-		}) : handler,
-	false);
-	return this;
+EventTarget.prototype.on = function (events, handler, selector) {///////////////////////////////////
+	var eventList = events.split(/,\s*/);
+
+	for(var eventName in eventList) {
+		this.addEventListener(eventList[eventName],
+			selector ?
+			(function () {
+				if (eventList[eventName].srcElement == this.find(selector)) { //.target
+					handler();
+				}
+			}) : handler,
+		false);
+		return this;
+	}
 }
 
 EventTarget.prototype.off = function (event, handler) {
@@ -229,6 +239,35 @@ HTMLElement.prototype.text = function(text){
 	}
 	return (this.innerText = text, this);
 }
+// const DELIMITERS = {
+// 		EMPTY: '',
+// 		SPACE: ' ',
+// 		COMMA: ',',
+// 		FULL_POINT: '.',
+// 	}
+// 		Object.prototype[DELIMITERS.FULL_POINT + 'changeHandler'] =
+// 			function changeHandler(events, handler, $delegate) {
+// 				var that = this;
+// 				var pattern = /\s/;
+
+// 				events
+// 					.replace(pattern, '')
+// 					.split(DELIMITERS.COMMA)
+// 					.forEach($delegate, that);
+
+// 				return that;
+// 			}
+// 			Object.prototype.removeProp = function (propNames) {
+// 				return this
+// 						[DELIMITERS.FULL_POINT + 'changeHandler']
+// 						(this, DELIMITERS.EMPTY, function (propNames) { delete this[propNames]; });
+// 			}
+// 			EventTarget.prototype.on = function (events, handler) {
+// 				return (this
+// 					[DELIMITERS.FULL_POINT + 'changeHandler']
+// 					(events, handler, function (item) { this.addEventListener(item, handler); }),
+// 					this);
+// 			}
 
 Node.prototype.parent = function(){
 	return this.parentNode;
@@ -236,19 +275,30 @@ Node.prototype.parent = function(){
 Element.prototype.parent = function(){
 	return this.parentElement;
 }
-Element.prototype.closest = function(selector){
-	var target = this,
-		targetParent = this.parentNode;
+// Element.prototype.closest = function(selector){
+// 	var target = this,
+// 		targetParent = this.parentNode;
 
-	while(!targetParent.find(selector).length){
-		target = targetParent;
-		targetParent = targetParent.parentNode;
-	}
+// 	while(!targetParent.find(selector).length){
+// 		target = targetParent;
+// 		targetParent = targetParent.parentNode;
+// 	}
 	
-	return target;
+// 	return target;
+// }
+
+Element.prototype.closest = function (selector) {
+	var targetParent = this.parentNode;
+	while(targetParent.tagName.toLowerCase() != selector ){
+		targetParent = targetParent.parentElement;
+		if (!targetParent) {
+			return window;
+		}
+	}
+	return targetParent;
 }
 
- Node.prototype.load = Node.prototype.ready = function(delegate){
+Node.prototype.load = Node.prototype.ready = function(delegate){
 	this.on('load', delegate);
 }
 Document.prototype.ready = function(delegate){

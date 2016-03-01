@@ -13,199 +13,232 @@
 				<html5:li>
 					<html5:details>
 						<html5:summary title="Hemigalinae"></html5:summary>
+						<html5:ol>
+							<html5:li>Genus <html5:a href="Chrotogale">Chrotogale</html5:a>
 							<html5:ol>
-								<html5:li>Genus <html5:a href="Chrotogale">Chrotogale</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Owston%27s_palm_civet">Owston's palm civet<html5:q>Chrotogale owstoni</html5:q>
-										</html5:a>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
 								<html5:li>
-									Genus <html5:a href="Cynogale">Cynogale</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Otter_civet">Otter civet</html5:a>
-												<html5:q>Chrotogale owstoni</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>
-									Genus <html5:a href="Diplogale">Diplogale</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Hose%27s_palm_civet">Hose's palm civet
-												<html5:q>Diplogae hosei</html5:q>
-											</html5:a>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>
-									Genus <html5:a href="Hemigalus">Hemigalus</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Banded_palm_civet">Banded palm civet
-												<html5:q>Hemigalus derbyanus</html5:q>
-											</html5:a>
-										</html5:li>
-									</html5:ol>
+									<html5:a href="Owston%27s_palm_civet">Owston's palm civet
+										<html5:q>Chrotogale owstoni</html5:q>
+									</html5:a>
 								</html5:li>
 							</html5:ol>
+						</html5:li>
+						<html5:li>
+							Genus <html5:a href="Cynogale">Cynogale</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Otter_civet">Otter civet</html5:a>
+									<html5:q>Chrotogale owstoni</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>
+							Genus <html5:a href="Diplogale">Diplogale</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Hose%27s_palm_civet">Hose's palm civet
+										<html5:q>Diplogae hosei</html5:q>
+									</html5:a>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>
+							Genus <html5:a href="Hemigalus">Hemigalus</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Banded_palm_civet">Banded palm civet
+										<html5:q>Hemigalus derbyanus</html5:q>
+									</html5:a>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+					</html5:ol>
+				</html5:details>
+			</html5:li>
+			<html5:li>
+				<html5:details>
+					<html5:summary title="Paradoxurinae">
+					</html5:summary>
+					<html5:ol>
+						<html5:li>Genus 
+							<html5:a href="Binturong">Arctictis</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Binturong">Binturong</html5:a>
+									<html5:q>Arctictis binturong</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>Genus 
+							<html5:a href="Small-toothed_palm_civet">Arctogalidia</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Small-toothed_palm_civet">Small-toothed palm civet</html5:a>
+									<html5:q>Arctogalidia trivirgata</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>Genus
+							<html5:a href="Sulawesi_palm_civet">Macrogalidia</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Sulawesi_palm_civet">Sulawesi palm civet</html5:a>
+									<html5:q>Macrogalidia musschenbroekii</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>Genus
+							<html5:a href="Masked_palm_civet">Paguma</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Masked_palm_civet">Masked palm civet</html5:a>
+									<html5:q>Paguma larvata</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+						<html5:li>Genus
+							<html5:a href="Paradoxurus">Paradoxurus</html5:a>
+							<html5:ol>
+								<html5:li>
+									<html5:a href="Binturong">Asian palm civet</html5:a>
+									<html5:q>Paradoxurus hermaphroditus</html5:q>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Binturong">Golden palm civet</html5:a>
+									<html5:q>Paradoxurus zeylonensis</html5:q>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Binturong">Golden wet-zone palm civet</html5:a>
+									<html5:q>Paradoxuru aureus</html5:q>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Binturong">Sri Lankan brown palm civet</html5:a>
+									<html5:q>Paradoxurus montanus</html5:q>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Binturong">Jerdon's palm civet</html5:a>
+									<html5:q>Paradoxurus jerdoni</html5:q>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Binturong">Golden dry-zone palm civet</html5:a>
+									<html5:q>Paradoxurus stenocephalus</html5:q>
+								</html5:li>
+							</html5:ol>
+						</html5:li>
+					</html5:ol>
+				</html5:details>
+			</html5:li>
+			<html5:li>
+				<html5:details>
+					<html5:summary title="Prionodontinae( see below )"></html5:summary>
+					<html5:ol>
+						<html5:li>Genus<html5:a href="Asiatic_linsang">Prionodon</html5:a>
+						<html5:ol>
+							<html5:li>
+								<html5:a href="Banded_linsang">Banded linsang
+									<html5:q>Prionodon linsang</html5:q></html5:a>
+								</html5:li>
+								<html5:li>
+									<html5:a href="Spotted_linsang">Spotted linsang
+										<html5:q>Prionodon pardicolor</html5:q></html5:a>
+									</html5:li>
+								</html5:ol>
+							</html5:li>
+						</html5:ol>
 					</html5:details>
 				</html5:li>
 				<html5:li>
 					<html5:details>
-						<html5:summary title="Paradoxurinae">
-						</html5:summary>
-							<html5:ol>
-								<html5:li>Genus 
-									<html5:a href="Binturong">Arctictis</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Binturong">Binturong</html5:a><html5:q>Arctictis binturong</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus 
-									<html5:a href="Small-toothed_palm_civet">Arctogalidia</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Small-toothed_palm_civet">Small-toothed palm civet</html5:a><html5:q>Arctogalidia trivirgata</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus
-									<html5:a href="Sulawesi_palm_civet">Macrogalidia</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Sulawesi_palm_civet">Sulawesi palm civet</html5:a><html5:q>Macrogalidia musschenbroekii</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus
-									<html5:a href="Masked_palm_civet">Paguma</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Masked_palm_civet">Masked palm civet</html5:a><html5:q>Paguma larvata</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus
-									<html5:a href="Paradoxurus">Paradoxurus</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Binturong">Asian palm civet</html5:a><html5:q>Paradoxurus hermaphroditus</html5:q>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Binturong">Golden palm civet</html5:a><html5:q>Paradoxurus zeylonensis</html5:q>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Binturong">Golden wet-zone palm civet</html5:a><html5:q>Paradoxuru aureus</html5:q>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Binturong">Sri Lankan brown palm civet</html5:a><html5:q>Paradoxurus montanus</html5:q>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Binturong">Jerdon's palm civet</html5:a><html5:q>Paradoxurus jerdoni</html5:q>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Binturong">Golden dry-zone palm civet</html5:a><html5:q>Paradoxurus stenocephalus</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-							</html5:ol>
-					</html5:details>
-				</html5:li>
-				<html5:li>
-					<html5:details>
-						<html5:summary title="Prionodontinae( see below )"></html5:summary>
-							<html5:ol>
-								<html5:li>Genus<html5:a href="Asiatic_linsang">Prionodon</html5:a>
-									<html5:ol>
-										<html5:li>
-											<html5:a href="Banded_linsang">Banded linsang<html5:q>Prionodon linsang</html5:q></html5:a>
-										</html5:li>
-										<html5:li>
-											<html5:a href="Spotted_linsang">Spotted linsang<html5:q>Prionodon pardicolor</html5:q></html5:a>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-							</html5:ol>
-					</html5:details>
-				</html5:li>
-				<html5:li>
-					<html5:details open="open">
 						<html5:summary title="Viverrinae"></html5:summary>
+						<html5:ol>
+							<html5:li>Genus <html5:a href="African_civet">Civettictis</html5:a>
 							<html5:ol>
-								<html5:li>Genus <html5:a href="African_civet">Civettictis</html5:a>
-									<html5:ol>
-										<html5:li><html5:a href="African_civet">African civet</html5:a><html5:q>Civettictis civetta</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus <html5:a href="Genet_(animal)">Genetta</html5:a>
-									<html5:ol xmlns:h="http://www.w3.org/TR/">
-										<h:li><html5:a href="Abyssinian_genet">Abyssinian genet</html5:a><html5:q>Genetta abyssinica</html5:q>
-										</h:li>
-										<h:li><html5:a href="Angolan_genet">Angolan genet</html5:a><html5:q>Genetta angolensis</html5:q>
-										</h:li>
-										<h:li><html5:a href="Bourlon%27s_genet">Bourlon's genet</html5:a><html5:q>Genetta bourloni</html5:q>
-										</h:li>
-										<h:li><html5:a href="Crested_servaline_genet">Crested servaline genet</html5:a><html5:q>Genetta cristata</html5:q>
-										</h:li>
-										<h:li><html5:a href="Common_genet">Common genet</html5:a><html5:q>Genetta genetta</html5:q>
-										</h:li>
-										<h:li><html5:a href="Johnston%27s_genet">Johnston's genet </html5:a><html5:q>Genetta johnston</html5:q>
-										</h:li>
-										<h:li><html5:a href="Rusty-spotted_genet">Rusty-spotted genet </html5:a><html5:q>Genetta maculata</html5:q>
-										</h:li>
-										<h:li><html5:a href="Pardine_genet">Pardine genet</html5:a><html5:q>Genetta pardina</html5:q>
-										</h:li>
-										<h:li><html5:a href="Aquatic_genet">Aquatic genet</html5:a><html5:q>Genetta piscivora</html5:q>
-										</h:li>
-										<h:li><html5:a href="King_genet">King genet</html5:a><html5:q>Genetta poensis</html5:q>
-										</h:li>
-										<h:li><html5:a href="Servaline_genet">Servaline genet</html5:a><html5:q>Genetta servalina</html5:q>
-										</h:li>
-										<h:li><html5:a href="Haussa_genet">Haussa genet </html5:a><html5:q>Genetta thierryi</html5:q>
-										</h:li>
-										<h:li><html5:a href="Cape_genet">Cape genet</html5:a><html5:q>Genetta tigrina</html5:q>
-										</h:li>
-										<h:li><html5:a href="Giant_forest_genet">Giant forest genet</html5:a><html5:q>Genetta victoriae</html5:q>
-										</h:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus <html5:a href="Poiana_(genus)">Poiana</html5:a>
-									<html5:ol>
-										<html5:li><html5:a href="Leighton%27s_linsang">Leighton's linsang</html5:a><html5:q>Poiana leightoni</html5:q>
-										</html5:li>
-										<html5:li><html5:a href="African_linsang">African linsang</html5:a><html5:q>Poiana richardsonii</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus <html5:a href="Viverra">Viverra</html5:a>
-									<html5:ol>
-										<html5:li><html5:a href="Leighton%27s_linsang">Malabar large-spotted civet</html5:a><html5:q>Viverra civettina</html5:q>
-										</html5:li>
-										<html5:li><html5:a href="African_linsang">Large-spotted civet</html5:a><html5:q>Viverra megaspila</html5:q>
-										</html5:li>
-										<html5:li><html5:a href="Malayan_civet">Malayan civet</html5:a><html5:q>Viverra tangalunga</html5:q>
-										</html5:li>
-										<html5:li><html5:a href="Large_Indian_civet">Large Indian civet</html5:a><html5:q>Viverra zibetha</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-								<html5:li>Genus <html5:a href="Small_Indian_civet">Viverricula</html5:a>
-									<html5:ol>
-										<html5:li><html5:a href="Small_Indian_civet">Small Indian civet</html5:a><html5:q>Viverricula indica</html5:q>
-										</html5:li>
-									</html5:ol>
-								</html5:li>
-							</html5:ol>
-					</html5:details>
-				</html5:li>
-			</html5:ol>
-		</html5:div>
-	</html5:body>
+								<html5:li><html5:a href="African_civet">African civet</html5:a>
+								<html5:q>Civettictis civetta</html5:q>
+							</html5:li>
+						</html5:ol>
+					</html5:li>
+					<html5:li>Genus <html5:a href="Genet_(animal)">Genetta</html5:a>
+					<html5:ol xmlns:h="http://www.w3.org/TR/">
+						<h:li><html5:a href="Abyssinian_genet">Abyssinian genet</html5:a>
+						<html5:q>Genetta abyssinica</html5:q>
+					</h:li>
+					<h:li><html5:a href="Angolan_genet">Angolan genet</html5:a>
+					<html5:q>Genetta angolensis</html5:q>
+				</h:li>
+				<h:li><html5:a href="Bourlon%27s_genet">Bourlon's genet</html5:a>
+				<html5:q>Genetta bourloni</html5:q>
+			</h:li>
+			<h:li><html5:a href="Crested_servaline_genet">Crested servaline genet</html5:a>
+			<html5:q>Genetta cristata</html5:q>
+		</h:li>
+		<h:li><html5:a href="Common_genet">Common genet</html5:a>
+		<html5:q>Genetta genetta</html5:q>
+	</h:li>
+	<h:li><html5:a href="Johnston%27s_genet">Johnston's genet </html5:a>
+	<html5:q>Genetta johnston</html5:q>
+</h:li>
+<h:li><html5:a href="Rusty-spotted_genet">Rusty-spotted genet </html5:a>
+<html5:q>Genetta maculata</html5:q>
+</h:li>
+<h:li><html5:a href="Pardine_genet">Pardine genet</html5:a>
+<html5:q>Genetta pardina</html5:q>
+</h:li>
+<h:li><html5:a href="Aquatic_genet">Aquatic genet</html5:a><html5:q>Genetta piscivora</html5:q>
+</h:li>
+<h:li><html5:a href="King_genet">King genet</html5:a>
+<html5:q>Genetta poensis</html5:q>
+</h:li>
+<h:li><html5:a href="Servaline_genet">Servaline genet</html5:a>
+<html5:q>Genetta servalina</html5:q>
+</h:li>
+<h:li><html5:a href="Haussa_genet">Haussa genet </html5:a>
+<html5:q>Genetta thierryi</html5:q>
+</h:li>
+<h:li><html5:a href="Cape_genet">Cape genet</html5:a>
+<html5:q>Genetta tigrina</html5:q>
+</h:li>
+<h:li><html5:a href="Giant_forest_genet">Giant forest genet</html5:a><html5:q>Genetta victoriae</html5:q>
+</h:li>
+</html5:ol>
+</html5:li>
+<html5:li>Genus <html5:a href="Poiana_(genus)">Poiana</html5:a>
+<html5:ol>
+	<html5:li><html5:a href="Leighton%27s_linsang">Leighton's linsang</html5:a>
+	<html5:q>Poiana leightoni</html5:q>
+</html5:li>
+<html5:li><html5:a href="African_linsang">African linsang</html5:a>
+<html5:q>Poiana richardsonii</html5:q>
+</html5:li>
+</html5:ol>
+</html5:li>
+<html5:li>Genus <html5:a href="Viverra">Viverra</html5:a>
+<html5:ol>
+	<html5:li><html5:a href="Leighton%27s_linsang">Malabar large-spotted civet</html5:a>
+	<html5:q>Viverra civettina</html5:q>
+</html5:li>
+<html5:li><html5:a href="African_linsang">Large-spotted civet</html5:a>
+<html5:q>Viverra megaspila</html5:q>
+</html5:li>
+<html5:li><html5:a href="Malayan_civet">Malayan civet</html5:a>
+<html5:q>Viverra tangalunga</html5:q>
+</html5:li>
+<html5:li><html5:a href="Large_Indian_civet">Large Indian civet</html5:a>
+<html5:q>Viverra zibetha</html5:q>
+</html5:li>
+</html5:ol>
+</html5:li>
+<html5:li>Genus <html5:a href="Small_Indian_civet">Viverricula</html5:a>
+<html5:ol>
+	<html5:li><html5:a href="Small_Indian_civet">Small Indian civet</html5:a>
+	<html5:q>Viverricula indica</html5:q>
+</html5:li>
+</html5:ol>
+</html5:li>
+</html5:ol>
+</html5:details>
+</html5:li>
+</html5:ol>
+</html5:div>
+</html5:body>
 </html5:html>

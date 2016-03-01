@@ -8,8 +8,11 @@ html {
     height: 100%;
 }
 body {
+	cursor: url(../images/cursorMouse.png), auto;
+    height: 100%;
 	overflow: hidden;
-	margin-left: 25px;
+/*	margin-left: 25px;*/
+
 }
 main {
     width: 375px;
@@ -108,7 +111,7 @@ a {
 	width: 256px;
 	position: absolute;
 	top: 44px;
-	background-color: #272727;
+	background-color: #464545;
 	border-radius: 5px;
 }
 
@@ -117,7 +120,7 @@ a {
 	width: 113px;
 	position: absolute;
 	top: 44px;
-	background-color: #272727;
+	background-color: #464545;
 	border-radius: 5px;
 }
 
@@ -153,6 +156,16 @@ a {
 .liMenu:first-of-type a {
 	cursor: url("../images/home.png"), auto;
 }
+.menu2 ul li:first-child a {
+	cursor: url(../images/facebook.png), auto;
+}
+.menu2 ul li:nth-child(2) a {
+	cursor: url(../images/twitter.png), auto;
+}
+.menu2 ul li:nth-child(3) a {
+	cursor: url(../images/instagram.png), auto;
+}
+
 body > div:first-child {
 	position: relative;
 	top: 40px;
