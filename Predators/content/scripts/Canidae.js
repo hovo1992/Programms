@@ -70,6 +70,10 @@ function refuse(i) {
 		buttons = parent.find('[type=button]'),
 		radios = parent.find('[type=radio]');
 
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].style.background = '#7DA886';
+	}
+
 	ranges.attr('readonly', 'readonly')
 		.val(function() {
 			return this.prop('min'); 
@@ -77,6 +81,7 @@ function refuse(i) {
 		.css('cursor', 'not-allowed')
 		.closest('tr')
 		.find('[type=text]')
+		.attr('disabled', 'disabled')
 		.val(0);
 
 	for (let j = 0; j < buttons.length; j++) { ///forEach
@@ -97,13 +102,16 @@ for (let i = 0; i < radioList.length; i++) {
 		radioList[i].prop('checked', 'checked');
 	}
 
+	
+}
+for (let i = 0; i < radioList.length; i++) {
 	radioList[i].on('click', function() { 
 		computeProgress(Math.floor(i / 3), i); 
-	});
+	})
 }
 
 function computeProgress(index, pointer) {
-	pointer = null == pointer ? index : pointer;
+	pointer = (!pointer) ? 0 : pointer;
 	partList[index] = radioList[pointer].val() * trList[index].find('[type=text]').val();
 	sumPart = 48;
 
@@ -125,7 +133,6 @@ function computeMeter(i) {
 		min = rangeList[i].min,
 		_min,
 		_max;
-		
 	for (let j = 0; j < percentList.length; j++) {
 		_min =rangeList[j].min, _max =rangeList[j].max;
 		percentList[j] = ((rangeList[j].val() - _min) / (_max - _min)) * METER_PART;
@@ -166,9 +173,16 @@ meter.on('change', function() {changeValue() }); ///////////////////////////////
 
 function allow(i) {
 	var parent = trList[i],
+		inputtext = parent.find('[type=text]'),
 		ranges = parent.find('[type=range]'),
 		buttons = parent.find('[type=button]'),
 		radios = parent.find('[type=radio]');
+
+	for (let i = 0; i < buttons.length; i++) {
+		buttons[i].style.cssText = '[type=button]:hover{ background-color: #00ff00 }';
+	}
+
+	inputtext.removeAttr('disabled');
 
 	ranges
 		.removeAttr('readonly')
@@ -221,10 +235,11 @@ for (let i = 0; i < countList.length; i++) {
 			index = i + (i % 3 == 0 ? 1 : -1);
 			var screen = countList[index];
 			screen.val((+screen.val() + i % 3 - 1) % 5);
-
+			var pointer
 			for (let j = 0; j < 3; j++) {
-				var pointer =  trList[Math.floor(i / 3)].find('[type=radio]')[j].prop('checked') * j;
-				computeProgress(Math.floor(i / 3), pointer);
+				//pointer =  trList[Math.floor(i / 3)].find('[type=radio]')[j].prop('checked') && j;
+				if(trList[Math.floor(i / 3)].find('[type=radio]')[j].prop('checked')) pointer = j;
+				computeProgress(Math.floor(i / 3), pointer); 
 			}
 		});
 	}
