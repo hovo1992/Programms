@@ -33,7 +33,7 @@ span {
 	list-style: square;
 }
 [title = "Tribe Bassariscini"] {
-	margin-left: 52px;
+	margin-left: 8px;
 }
 body {
 	/*width: 585px;*/
@@ -51,14 +51,14 @@ details {
 
 	border-radius: 10px;
 
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 }
-body details:first-child {
+.details {
     padding: 10px;
     /* margin: auto; */
-    margin-top: 13px;
+    /*margin-top: 13px;*/
     /* float: left; */
-    /* line-height: 10px; */
+     /*line-height: 10px; */
     font-size: 15px;
     width: 600px;
     /* height: 560px; */
@@ -98,15 +98,17 @@ summary {
     margin-left: 39px;
 }
 .Bassariscini {
-	margin-left: 45px;
+	margin-left: 7px;
 }
 .blossom {
-	margin-left: 36px;
+	margin-left: 51px;
 }
 
 details:first-of-type details {
     margin-left: 45px;
 }
+
+
 /*.position {
 	margin-left: -13px;
 }

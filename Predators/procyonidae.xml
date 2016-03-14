@@ -6,7 +6,7 @@
 		</style>
 	</head>
 	<body>
-		<details open="open">
+		<details class="details" open="open">
 			<summary class="caption" title="FAMILY PROCYONIDAE"></summary>
 			<details open="open">
 				<summary class="subfamily" title="Subfamily Procyoninae( nine spacies in four genera )"></summary>
@@ -55,9 +55,8 @@
 							</dir>
 						</li>
 					</dir>
-				</details>
-			</details>
-			<details class="Bassariscini" open="open">
+				</details>	
+				<details class="Bassariscini" open="open">
 				<summary  title="Tribe Bassariscini"></summary>
 				<dir>
 					<li class="length">
@@ -73,6 +72,8 @@
 					</li>
 				</dir>
 			</details>
+			</details>
+		
 			<details open="open">
 				<summary class="potosinae" title="Subfamily Potosinae"></summary>
 				<dir class="position">
